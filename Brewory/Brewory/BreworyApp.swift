@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct BreworyApp: App {
+    @StateObject private var store = CoffeeRecordStore()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }
